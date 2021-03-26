@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>KALBI</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+</head>
+
+<body class="img js-fullheight" style="background-image: url({{url_for('static', filename='img/cspa.jpg')}});">
+  <section class="ftco-section">
+    <!-- <div class="container">
+<div class="row justify-content-center">
+<div class="col-md-6 text-center mb-5">
+<h2 class="heading-section">KALBI</h2>
+</div>
+</div> -->
+    <div class="row justify-content-center">
+      <div class="col-md-6 col-lg-4">
+        <div class="login-wrap p-0">
+          <h3 class="mb-4 text-center"><b>CSPA সম্বন্ধে বিস্তারিত জানতে Click করুন </b></h3>
+            <form class="mb-4 text-center"  method="get" action="/cspa">
+              <button type="submit" class="btn btn-success" >Continue</button>
+            </form>
+          <h3 class="mb-4 text-center"><b>CSPA age calculation</b></h3>
+          <form action="/" class="text" method="POST">
+
+            <P><b>Enter your APPROVED DATE</b></P>
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="y" placeholder="Year" required>
+
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="m" placeholder="Month" required>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="d" placeholder="Day" required>
+
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+
+            <P><b>Enter your PRIORITY DATE</b></P>
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="year" placeholder="Year" required>
+
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="month" placeholder="Month" required>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="day" placeholder="Day" required>
+
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <P><b>Enter the date when PRIORITY DATE will become corrent or has been</b></P>
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="cpy" placeholder="Year" required>
+
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="cpm" placeholder="Month" required>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="cpd" placeholder="Day" required>
+
+                </div>
+              </div>
+            </div>
+            <br><br>
+
+            <P><b>Enter your DATE OF BIRTH</b></P>
+            <div class="row g-2">
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="dy" placeholder="Year" required>
+
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="dm" placeholder="Month" required>
+                </div>
+              </div>
+              <div class="col-md">
+                <div class="form-floating">
+                  <input type="text" class="form-control " name="dd" placeholder="Day" required>
+
+                </div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+            <br>
+            <div class="form-group">
+              <button type="submit" class="form-control btn btn-primary submit px-3">Submit</button>
+            </div>
+          </form>
+          <p class="w-100 text-center">&mdash; <b>Your cspa age is</b> &mdash;</p>
+          <p style="word-spacing:8px; font-size: 20px; color:oldlace "><big>{{years}} years {{months}} months {{days}}
+              days</big></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    <footer class="footer">
+      <div class="content container">
+        <div class="row">
+          <div class="col-xs-6">
+            <!-- <img class="footer-logo" src="img/logo-dark.png" alt="Aircv Logo"> -->
+          </div>
+          <div class="col-xs-6 text-right sm-text-left">
+            <p class="margin-b-0"><a class="fweight-700" href="http://link of my web page">Created by:
+                Kalbi</a>..........</p>
+          </div>
+        </div>
+        <!--// end row -->
+      </div>
+    </footer>
+  </section>
+  <script src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/popper.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+
+</html>
